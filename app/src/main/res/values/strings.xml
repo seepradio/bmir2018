@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright bmir.org and shoutingfire.com 2011,2018 -->
+<resources>
+    <string name="app_name">ShoutingFire (formerly BMIR)</string>
+    
+    <string name="STR_TITLE_STOPPED">stopped</string>
+    <string name="STR_TITLE_PLAYING">playing</string>
+    <string name="STR_TITLE_ERROR">error</string>
+    
+    <string name="STR_SELECT_TO_RETURN">Select to return.</string>
+    <string name="STR_PREPARING">Preparing. Select to return to app.</string>
+    <string name="STR_SERVICE_UNAVAILABLE">Web service is not available. Please try again later.</string>
+    <string name="STR_INTERNET_UNAVAILABLE">Internet is not available. Please enable and try again.</string>
+    <string name="STR_MEDIA_SERVER_DIED">Media server died.  Please try again.</string>
+    <string name="STR_MEDIA_PLAYER_DIED">Android media player died.  Please try again.</string>
+    <string name="STR_CONNECT_ERROR">Could not connect to server. Please try again.</string>
+    <string name="STR_MEDIA_PLAYER_TROUBLE">Android media player trouble.</string>
+    <string name="STR_AUDIO_FOCUS_DECLINED">Android blocked this app from playing. Please try again later.</string>
+    <string name="STR_PLAYING_SOFTLY">Playing softly. Select to return to app.</string>
+    <string name="STR_PAUSED">Paused.</string>
+</resources>

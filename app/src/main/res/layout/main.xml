@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright bmir.org and shoutingfire.com 2011,2018 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center" >
+     >
+
+    <ImageButton
+        android:id="@+id/playStopButton"
+        android:layout_width="144dp"
+        android:layout_height="238dp"
+        android:background="@null"
+        android:onClick="handleButton"
+        android:src="@drawable/shoutingfireplay"
+        android:tag="BMIR_STATE_STOPPED" />
+
+</LinearLayout>

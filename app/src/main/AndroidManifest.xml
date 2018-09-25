@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright bmir.org and shoutingfire.com 2018 -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="org.bmir.mobile.android.player"
+      android:versionCode="304"
+      android:versionName="3.0.4">
+      
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    
+    <application android:icon="@drawable/icon" 
+                 android:label="@string/app_name">
+        <service android:name=".PlayerService"
+                 android:enabled="true" >
+            <intent-filter>
+                <!-- Note: These must match strings defined in PlayerService.java -->
+                <action android:name="org.bmir.mobile.android.player.playerservice.action.BUTTON" />
+                <action android:name="org.bmir.mobile.android.player.playerservice.action.STATUS" />
+            </intent-filter>
+        </service>
+        
+        <activity android:name=".MainActivity"
+                  android:launchMode="singleTask"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!-- Note: This must match the string defined in MainActivity.java -->
+                <action android:name="org.bmir.mobile.android.player.mainactivity.action.IMAGE" />
+            </intent-filter>
+        </activity>
+    </application>
+    
+    <!-- Filters for Android Market -->
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.location" android:required="false" />
+    <uses-feature android:name="android.hardware.microphone" android:required="false" />
+    <!-- One of the following is used to access the internet, but neither is required. -->
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <uses-feature android:name="android.hardware.wifi" android:required="false" />    
+    <!-- Permit the app to run on Google TV devices. -->
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+</manifest>
